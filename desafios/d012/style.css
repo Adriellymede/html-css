@@ -16,68 +16,98 @@
 }
 html,body{
     min-height: 100vh;
+    
 }
 header{
     background-color: black;
     color: white;
     text-align: center;
-    height: 25vh;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    
    
 
 }
 header>h1{
-    padding-top: 50px;
+    padding-top: 80px;
     font-variant: small-caps;
     font-family: var(--fonte2);
-    font-size: 4em;
+    font-size: 10vw;
+    text-shadow: 2px 2px 2px black;
     
 }
 header > p{
-    font-family: var(--fonte2);
-    font-size: 1.2em;
-    padding-bottom: 50px;
-    font-weight: normal;
+    font-family: var(--fonte1);
+    font-size: 4.5em;
+    padding-bottom: 80px;
+  
 
 }
 
 a{
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    
 }
 a:hover{
     text-decoration: underline;
 }
 section{
     font-family: var(--fonte3);
-    font-size: 1.4em;
+    font-size: 3.5vw;
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
-    padding-left: 20px;
+    padding-left: 80px;
 }
 
+section> p{
+    padding-bottom: 2em;
+}
 section.normal{
+   
+
+}
+section.imagem#imagem1{
+    background-image: url(imagens/background001.jpg);
+    background-position:right, center;
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 2px 1px black;
     
+}
+
+
+section.imagem#imagem2{
+    color: white;
+    background-image: url(imagens/background002.jpg);
+    background-size: cover;
+    text-shadow: 2px 2px 2px black;
     
-    
+
 }
 section.imagem{
-    background-image: url(imagens/background001.jpg);
-    background-position: right, right;
-    background-size: cover;
-    width: 100vh;
-    color: white;
-    
+    box-shadow: inset 6px 6px 15px 0px rgba(0, 0, 0, 0.683);
+    background-attachment: fixed;
 }
 section.imagem>p{
-    background-color: rgba(0, 0, 0, 0.394);
-    width: 300px;
-    padding-left: 5px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.527);
+    
+
+     
 }
 footer{
+    font-family: var(--fonte1);
     background-color: black;
     color: white;
     text-align: center;
     padding: 10px;
-    font-size: 18px;
+    font-size: 2vw;
+}
+footer > p{
+    padding: 20px;
+    margin: auto;
+   
 }
