@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+           
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 8px;
+            
+        }
+        col.cnome{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+    <table>
+        <colgroup>
+            <col class="cnome" span="2"> <!--  A tag span faz com que o estilo seja aplicado para quantas colunas colocar ( ex 3, 4, 5 ...)-->
+            <col class="csexo" >
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+        <!-- Essa tag facilita para personalizar o estilo-->
+
+        <caption>Cadastro</caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sexo</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+            </tr>
+        </thead>
+    <tbody>
+        <tr>
+            <td> Ana Maria</td>
+            <td> Feminino</td>
+            <td> 32 anos</td>
+            <td> Enfermeira</td>
+        </tr>
+        <tr>
+            <td>Carlos Eduardo</td>
+            <td>Masculino</td>
+            <td> 40 anos</td>
+            <td> Professor</td>
+        </tr>
+        <tr>
+            <td>Valdinei de Oliveira</td>
+            <td>Masculino</td>
+            <td> 39 anos</td>
+            <td> Engenheiro</td>
+            
+        </tr>
+        <tr>
+            <td> Mônica Alves </td>
+            <td>Feminino</td>
+            <td>25 anos</td>
+            <td>Manicure</td>
+        </tr>
+
+
+    </tbody>
+    </table>
+    
+</body>
+</html>
