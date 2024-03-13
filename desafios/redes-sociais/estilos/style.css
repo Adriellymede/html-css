@@ -11,7 +11,8 @@ html, body{
     background-color: black;
 }
 body{
-    background: url(../imagens/fundo.avif) no-repeat;
+   background-color: rgb(240, 242, 245);
+   
     
 }
 main{
@@ -29,11 +30,11 @@ section#celular{
     height: 400px;
     background-color: antiquewhite;
     background: url(/imagens/celular-pq.jpg) no-repeat;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
+    border-radius: 4px;
+    -webkit-border-radius: 41px;
+    -moz-border-radius: 41px;
+    -ms-border-radius: 41px;
+    -o-border-radius: 41px;
 }
    
 
