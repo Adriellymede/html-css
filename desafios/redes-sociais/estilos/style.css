@@ -11,8 +11,10 @@ html, body{
     background-color: black;
 }
 body{
-   background-color: rgb(240, 242, 245);
-   
+   background: url(../imagens/imm.jpg) no-repeat top center;
+   /* background-size faz com que a imagem cubra a tela inteira*/
+   background-size: cover;
+    
     
 }
 main{
