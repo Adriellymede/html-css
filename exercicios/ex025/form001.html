@@ -7,5 +7,15 @@
 </head>
 <body>
     <h1>Meu primeiro Formulário</h1>
+    <form action="cadastro.php" autocomplete="off">
+        <!--  a tag autocomplete= "off" Faz com que não apareça sugestão para colocar os dados-->
+    
+        <p><label for="inome">Nome:</label>
+             <input type="text" name="nome" id="inome"></p>
+        <P><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"> </P>
+        <p><input type="submit" value="Enviar"></p>
+        <!-- Para nome/sobrenome ter ligação com a caixa do input é necessário envelopa-los na tag "label" e em 'for' preencher com o Id do input-->
+    </form>
 </body>
 </html>
