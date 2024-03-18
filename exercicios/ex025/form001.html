@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Meu primeiro Formulário</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" method="get" autocomplete="off">
         <!--  a tag autocomplete= "off" Faz com que não apareça sugestão para colocar os dados-->
     
         <p><label for="inome">Nome:</label>
@@ -16,6 +16,8 @@
             <input type="text" name="sobrenome" id="isobrenome"> </P>
         <p><input type="submit" value="Enviar"></p>
         <!-- Para nome/sobrenome ter ligação com a caixa do input é necessário envelopa-los na tag "label" e em 'for' preencher com o Id do input-->
+
+        <!-- Existe dois métodos de formulário (method="get")esse armazena as informações de pesquina na url e o (method=" post") que não armazena. Ambos são inseridos na tag "form"-->
     </form>
 </body>
 </html>
