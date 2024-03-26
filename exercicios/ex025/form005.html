@@ -9,15 +9,25 @@
     <h1>Exemplo de formulário</h1>
     <form action="" method="get">
         <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="genero" id="ifeminino"><label for="ifeminino">Feminino</label>
+            <input type="radio" name="genero" id="imasculino"><label for="imasculino">Masculino</label>
+            <!-- Com o input "Radio" o seletor marca e não desmarca nenhuma ou ambas simultaneamente das opções. Para isso não acontecer, é necessário definir o mesmo nome ( exemplo acima ) para ambos os input's. -->
+        </fieldset>
+
+        <fieldset >
             <legend>Esportes favoritos</legend>
             <input type="checkbox" name="fut" id="ifut"> <label for="ifut">Futebol </label><br>
             <input type="checkbox" name="bas" id="ibas"> <label for="ibas">Basquete</label> <br>
             <input type="checkbox" name="quei" id="iquei"> <label for="iquei">Queimada</label> <br>
             <input type="checkbox" name="vo" id="ivo"> <label for="ivo">Vôlei</label> <br>
-            <input type="checkbox" name="fut" id="ifut"><label for="ifut">Futsal</label>  <br>
+            <input type="checkbox" name="fut" id="ifut" checked><label for="ifut">Futsal</label>  <br>
             <input type="checkbox" name="te" id="ite"> <label for="ite">Tênis</label><br>
-
+            <!-- Os input's precisam ter ligação entre o nome e o id. Para na hora de marcar eles corresponderem.-->
+            <!-- A tag "Checked" faz com que o campo seja ao abrir a página já esteja selecionado-->
         </fieldset>
+
+
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpasr">
