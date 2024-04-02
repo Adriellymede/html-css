@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/*Estilos para impressoras*/ 
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    font-family: 'Courier New', Courier, monospace;
+    /*Essa fonte é mais adequeada para se ler em papel*/
+    font-size: 1.5em;
+    line-height: 1.5em;
+
+}
+menu{
+    display: none;
+    /*Com essa configuração a tag selecionada e tudo que estiver dentro dela, não irá aparecer quando pedir para imprimir*/
+}
+header > h1{
+    text-align: center;
+    padding: 30px;
+}
+
+article::after{
+    content: 'Esse artigo foi impresso através do site cursoemvideo.com';
+}
+article{
+    width: 100%;
+}
+article > h2{ 
+    padding: 30px;
+
+}
+article > p{
+    padding: 30px;
+}
